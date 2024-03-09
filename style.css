@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: first baseline;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loder {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border-top: 10px solid #4285f4;
+  border-bottom: 10px solid #ea4335;
+  border-left: 10px solid #fbbc05;
+  border-right: 10px solid #34a853;
+  animation: spin 0.7s linear 0s infinite;
+  position: relative;
+  top: 20%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+span {
+  font-size: 6vw;
+  font-weight: 500;
+}
